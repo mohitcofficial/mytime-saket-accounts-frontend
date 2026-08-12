@@ -1,0 +1,149 @@
+.container {
+  background: #f7f8fc;
+  min-height: 100vh;
+  position: relative;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.bookingID {
+  color: #3f3f3f;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0c122a;
+  text-decoration: none;
+  border: 1px solid #adb0b6;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.backBtn:hover {
+  border: 1px solid #5f5f5f;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: #656a75;
+  font-size: 11px;
+}
+
+.data {
+  padding: 2px 0;
+  width: fit-content;
+  font-size: 12px;
+  color: #000000;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid #e5e7eb;
+  background-color: #4e32b30c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.serviceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.serviceHeading {
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.clientRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.smallBtn {
+  border: none;
+  color: var(--primary);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.smallBtn:hover {
+  color: black;
+}
+
+.remark {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.remark span {
+  color: #000000;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid4,
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .clientRow {
+    grid-template-columns: 1fr;
+  }
+}

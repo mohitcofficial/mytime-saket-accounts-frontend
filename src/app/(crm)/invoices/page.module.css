@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}

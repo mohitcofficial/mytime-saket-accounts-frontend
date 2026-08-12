@@ -1,0 +1,67 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0c122a;
+}
+
+.editBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: #ffffff;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.editBtn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 18px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .editBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

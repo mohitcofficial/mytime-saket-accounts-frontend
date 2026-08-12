@@ -1,0 +1,252 @@
+.topbar {
+  height: 80px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 10px -8px rgba(0, 0, 0, 0.15);
+}
+
+.collapsedTopbar {
+  margin-left: 90px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+}
+
+.companyName {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.dateCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 2px solid rgb(219, 219, 219);
+  padding: 12px 18px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+}
+
+.dateText {
+  display: flex;
+  flex-direction: column;
+}
+
+.dateText span:first-child {
+  font-weight: 600;
+}
+
+.dateText span:last-child {
+  font-size: 13px;
+
+  color: var(--text-secondary);
+}
+
+.iconButton {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 14px;
+
+  border: 1px solid var(--border);
+
+  background: white;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  transition: all 0.25s ease;
+}
+
+.iconButton:hover {
+  background: #f8f9fc;
+}
+
+.badge {
+  position: absolute;
+
+  top: -5px;
+  right: -5px;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #ef4444;
+
+  color: white;
+
+  font-size: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+
+  color: white;
+
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInfo h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profileInfo span {
+  font-size: 13px;
+
+  color: var(--text-secondary);
+}
+
+.mobileMenu {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--border);
+
+  background: white;
+
+  cursor: pointer;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .dateCard {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .topbar {
+    margin-left: 0;
+    padding: 0 16px;
+  }
+
+  .collapsedTopbar {
+    margin-left: 0;
+  }
+
+  .mobileMenu {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logoText {
+    font-size: 18px;
+  }
+
+  .profileInfo {
+    display: none;
+  }
+
+  .right {
+    gap: 10px;
+  }
+
+  .iconButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 16px;
+  }
+
+  .right {
+    gap: 6px;
+  }
+
+  .iconButton:nth-child(2) {
+    display: none;
+  }
+}
