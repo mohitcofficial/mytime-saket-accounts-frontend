@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import BookingApiServices from "@/services/api/Booking.api.services";
 import BookingTable2 from "@/components/bookings/BookingTable2";
 
-function page() {
+function Page() {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [totalBookings, setTotalBookings] = useState(0);
@@ -71,4 +71,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./UpdateserviceModal.module.css";
+import styles from "./UpdateServiceModal.module.css";
 import { toast } from "react-toastify";
 import { formatDateForInput } from "@/utils/helper";
 import BookingApiServices from "@/services/api/Booking.api.services";
