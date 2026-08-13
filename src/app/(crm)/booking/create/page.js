@@ -13,8 +13,10 @@ import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import DataUsageIcon from "@mui/icons-material/DataUsage";
 import ReceiptIcon from "@mui/icons-material/Receipt";
 import AggregatorApiServices from "@/services/api/Aggregator.api.services";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
   const [bookingData, setBookingData] = useState({
     bookingID: "",
     bookingDate: "",
@@ -198,7 +200,7 @@ export default function Page() {
     try {
       const data = await AggregatorApiServices.getAllAggregators();
       setAggregators(data.aggregators);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       toast.error("Error while fetching Aggregators");
     }

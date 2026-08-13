@@ -49,7 +49,7 @@ export default function Page() {
     try {
       const data = await AggregatorApiServices.getAllAggregators();
       setAggregators(data.aggregators);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       toast.error("Error while fetching Aggregators");
     }
