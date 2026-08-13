@@ -187,6 +187,7 @@ export default function Page() {
 
     try {
       const data = await BookingApiServices.createBooking(payload);
+      router.push("/bookings");
       toast.success(data?.message);
     } catch (error) {
       toast.error(error?.response?.data?.message);
